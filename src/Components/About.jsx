@@ -11,7 +11,11 @@ const About = () => {
           <div className="container max-w-5xl px-4 py-12 mx-auto">
             <div className="grid gap-4 mx-4 sm:grid-cols-12">
               <div className="col-span-12 sm:col-span-3">
-                <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-600">
+                <div
+                  className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-600"
+                  data-aos-duration="2000"
+                  data-aos="fade-right"
+                >
                   <h3 className="text-3xl font-semibold">Paracetamol</h3>
                   <span className="text-sm font-bold tracking-wider uppercase dark:text-gray-600">
                     A solution to every disease
@@ -20,7 +24,8 @@ const About = () => {
               </div>
               <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
                 <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-300">
-                  <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                  <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"data-aos-duration="2000"
+data-aos="fade-left">
                     <h3 className="text-xl font-semibold tracking-wide">
                       Introduction{" "}
                     </h3>
@@ -64,7 +69,8 @@ const About = () => {
                       text easy to understand by the user.
                     </p>
                   </div>
-                  <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600">
+                  <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-600"data-aos-duration="2000"
+data-aos="fade-left">
                     <h3 className="text-xl font-semibold tracking-wide">
                       Methodology
                     </h3>
@@ -72,26 +78,32 @@ const About = () => {
                       May 2024
                     </time>
                     <p className="mt-3">
-                      2. Methodology: <br /> There are 4 methodologies of our website
-                      <br />1. Prescription Scanner <br />2. Submitting Prescription for
-                      medicine <br />3. Medicine shop <br />4. Doctors Appointment <br />2.1
-                      Prescription Scanner: This is a sophisticated AI-driven
-                      system designed to accurately scan and interpret medical
-                      prescriptions. This technology uses advanced optical
-                      character recognition (OCR) coupled with machine learning
-                      algorithms to ensure that the prescriptions are read
-                      accurately, and the correct medications are identified.
-                      <br />2.2 Submitting Prescription: After scanning the
+                      2. Methodology: <br /> There are 4 methodologies of our
+                      website
+                      <br />
+                      1. Prescription Scanner <br />
+                      2. Submitting Prescription for medicine <br />
+                      3. Medicine shop <br />
+                      4. Doctors Appointment <br />
+                      2.1 Prescription Scanner: This is a sophisticated
+                      AI-driven system designed to accurately scan and interpret
+                      medical prescriptions. This technology uses advanced
+                      optical character recognition (OCR) coupled with machine
+                      learning algorithms to ensure that the prescriptions are
+                      read accurately, and the correct medications are
+                      identified.
+                      <br />
+                      2.2 Submitting Prescription: After scanning the
                       prescription if someone submits the prescription we will
                       provide medicine to the user.They don't need to hustle to
-                      med shops. <br /> 2.3 Medicine Shop: Users can scroll through our
-                      medicine shop to buy any medicine they want. Our delivery
-                      persons will deliver the medicines to the user within a
-                      day. <br /> 2.4 Doctors Appointment: Access to a network of
-                      licensed professionals across various specialties for
-                      teleconsultations or in-person visits, bookable directly
-                      through the application 2.5 Logistic and delivery
-                      department: To complement the digital services,
+                      med shops. <br /> 2.3 Medicine Shop: Users can scroll
+                      through our medicine shop to buy any medicine they want.
+                      Our delivery persons will deliver the medicines to the
+                      user within a day. <br /> 2.4 Doctors Appointment: Access
+                      to a network of licensed professionals across various
+                      specialties for teleconsultations or in-person visits,
+                      bookable directly through the application 2.5 Logistic and
+                      delivery department: To complement the digital services,
                       Paracetamol boasts a robust logistics framework that
                       ensures timely delivery of medicines. We understand that
                       many of our users rely on punctuality, especially when it

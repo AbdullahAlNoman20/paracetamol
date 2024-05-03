@@ -7,7 +7,8 @@ const Prescription = () => {
         <title>Paracetamol | Prescription </title>
       </Helmet>
         <div className="flex flex-col lg:flex-row gap-10 justify-around items-center my-20">
-        <div className="">
+        <div className=""data-aos="zoom-in"
+data-aos-duration="1000">
           <fieldset className="w-full space-y-1 dark:text-gray-800">
             <label htmlFor="files" className="block text-sm font-medium">
               Upload Your Prescription
@@ -22,7 +23,8 @@ const Prescription = () => {
             </div>
           </fieldset>
         </div>
-        <div className="border bg-green-200 p-24 rounded-3xl">
+        <div className="border bg-green-200 p-24 rounded-3xl"data-aos="zoom-in"
+data-aos-duration="1500">
           <button className="btn btn-success"><i className="fa-solid fa-paint-roller"></i> Scan Your Prescription</button>
         </div>
       </div>
@@ -33,8 +35,11 @@ const Prescription = () => {
               src="https://i.ibb.co/VvR4HB8/b.png"
               alt=""
               className="w-full h-60 sm:h-96 dark:bg-gray-500"
+              data-aos="zoom-in"
+data-aos-duration="2000"
             />
-            <div className="p-6 pb-12 m-4 mx-auto lg:-mt-14 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-green-400">
+            <div className="p-6 pb-12 m-4 mx-auto lg:-mt-14 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-green-400"data-aos="zoom-in"
+data-aos-duration="2500">
               <div className="space-y-2">
                 <a
                   rel="noopener noreferrer"

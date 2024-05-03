@@ -16,7 +16,8 @@ const Register = () => {
           </div>
           <form noValidate="" action="" className="space-y-12">
             <div className="space-y-4">
-              <div className="space-y-1 text-sm">
+              <div className="space-y-1 text-sm"data-aos-duration="2000"
+data-aos="fade-left">
                 <label htmlFor="name" className="block dark:text-gray-600">
                   Your Name
                 </label>
@@ -28,7 +29,8 @@ const Register = () => {
                   className="border w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
                 />
               </div>
-              <div>
+              <div data-aos-duration="2000"
+data-aos="fade-right">
                 <label htmlFor="email" className="block mb-2 text-sm">
                   Email address
                 </label>
@@ -40,7 +42,8 @@ const Register = () => {
                   className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800"
                 />
               </div>
-              <div>
+              <div data-aos-duration="2000"
+data-aos="fade-left">
                 <div className="flex justify-between mb-2">
                   <label htmlFor="password" className="text-sm">
                     Password

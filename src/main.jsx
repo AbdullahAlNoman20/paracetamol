@@ -6,8 +6,9 @@ import Root from "./Components/Root";
 import Error from "./Components/Error";
 import Home from "./Components/Home";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 import Prescription from "./Components/Prescription";
 import Doctor from "./Components/Doctor";
 import Medicine from "./Components/Medicine";

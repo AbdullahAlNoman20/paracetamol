@@ -8,7 +8,8 @@ const MedicineCard = ({medicine}) => {
 
   return (
     <div>
-      <div className="card card-side bg-base-100 shadow-xl border">
+      <div className="card card-side bg-base-100 shadow-xl border"data-aos="zoom-in"
+data-aos-duration="1000">
         <figure>
           <img
           className="p-5 rounded-3xl"
