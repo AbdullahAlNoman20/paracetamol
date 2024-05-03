@@ -27,29 +27,34 @@ const Nav = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <NavLink to="/">
+               <NavLink to="/">
             <li>
-              <a>Home</a>
+              <a><i class="fa-solid fa-house"></i> Home</a>
             </li>
             </NavLink>
             <NavLink to="/prescription">
             <li>
-              <a>Prescription</a>
+              <a><i class="fa-solid fa-print"></i>Prescription</a>
             </li>
             </NavLink>
             <NavLink to="/doctor">
             <li>
-              <a>Doctor</a>
+              <a><i class="fa-solid fa-user-nurse"></i>Doctor</a>
             </li>
             </NavLink>
             <NavLink to="/medicine">
             <li>
-              <a>Medicine Stor</a>
+              <a><i class="fa-solid fa-syringe"></i>Medicine Stor</a>
             </li>
             </NavLink>
             <NavLink to="/about">
             <li>
-              <a>About</a>
+              <a><i class="fa-regular fa-address-card"></i>About</a>
+            </li>
+            </NavLink>
+            <NavLink to="/order">
+            <li>
+              <a><i class="fa-solid fa-dolly"></i>Order List</a>
             </li>
             </NavLink>
             </ul>
@@ -73,29 +78,35 @@ const Nav = () => {
 
             <NavLink to="/">
             <li>
-              <a>Home</a>
+              <a><i class="fa-solid fa-house"></i> Home</a>
             </li>
             </NavLink>
             <NavLink to="/prescription">
             <li>
-              <a>Prescription</a>
+              <a><i class="fa-solid fa-print"></i>Prescription</a>
             </li>
             </NavLink>
             <NavLink to="/doctor">
             <li>
-              <a>Doctor</a>
+              <a><i class="fa-solid fa-user-nurse"></i>Doctor</a>
             </li>
             </NavLink>
             <NavLink to="/medicine">
             <li>
-              <a>Medicine Stor</a>
+              <a><i class="fa-solid fa-syringe"></i>Medicine Stor</a>
             </li>
             </NavLink>
             <NavLink to="/about">
             <li>
-              <a>About</a>
+              <a><i class="fa-regular fa-address-card"></i>About</a>
             </li>
             </NavLink>
+            <NavLink to="/order">
+            <li>
+              <a><i class="fa-solid fa-dolly"></i>Order List</a>
+            </li>
+            </NavLink>
+            
             
           </ul>
         </div>

@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     return (
         <div className="flex justify-center my-20">
-            <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+			<Helmet>
+        <title>Paracetamol | Log-In </title>
+      </Helmet>
+            <div className="border w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
 	<form noValidate="" action="" className="space-y-6">
 		<div className="space-y-1 text-sm">

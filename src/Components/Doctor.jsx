@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import DoctorCard from "./DoctorCard";
+import { Helmet } from "react-helmet-async";
 
 const Doctor = () => {
 
@@ -14,6 +15,9 @@ const Doctor = () => {
 
     return (
         <div>
+          <Helmet>
+        <title>Paracetamol | Doctors </title>
+      </Helmet>
             <div className="flex justify-center m-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 ">
         {doctors.map((doctor) => (

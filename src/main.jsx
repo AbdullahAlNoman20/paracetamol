@@ -1,28 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Root from './Components/Root';
-import Error from './Components/Error';
-import Home from './Components/Home';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./Components/Root";
+import Error from "./Components/Error";
+import Home from "./Components/Home";
 
-
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-import Prescription from './Components/Prescription';
-import Doctor from './Components/Doctor';
-import Medicine from './Components/Medicine';
-import About from './Components/About';
-import Login from './Components/Login';
-import Register from './Components/Register';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Prescription from "./Components/Prescription";
+import Doctor from "./Components/Doctor";
+import Medicine from "./Components/Medicine";
+import About from "./Components/About";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
+import OrderList from "./Components/OrderList";
+import { HelmetProvider } from "react-helmet-async";
 AOS.init();
-
-
-
 
 const router = createBrowserRouter([
   {
@@ -31,42 +25,47 @@ const router = createBrowserRouter([
     errorElement: <Error></Error>,
     children: [
       {
-        path: '/',
-        element: <Home></Home>
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path: '/about',
-        element: <About></About>
+        path: "/about",
+        element: <About></About>,
       },
       {
-        path: '/prescription',
-        element: <Prescription></Prescription>
+        path: "/prescription",
+        element: <Prescription></Prescription>,
       },
       {
-        path: '/doctor',
+        path: "/doctor",
         element: <Doctor></Doctor>,
-        loader: ()=>fetch('/doctors.json')
+        loader: () => fetch("/doctors.json"),
       },
       {
-        path: '/medicine',
+        path: "/medicine",
         element: <Medicine></Medicine>,
-        loader: ()=>fetch('/Medicine.json')
+        loader: () => fetch("/Medicine.json"),
       },
       {
-        path: '/login',
-        element: <Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path: '/register',
-        element: <Register></Register>
+        path: "/register",
+        element: <Register></Register>,
       },
-
-    ]
+      {
+        path: "/order",
+        element: <OrderList></OrderList>,
+      },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  </React.StrictMode>
+);
