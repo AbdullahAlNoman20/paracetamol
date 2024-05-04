@@ -17,6 +17,7 @@ import Login from "./Components/Login";
 import Register from "./Components/Register";
 import OrderList from "./Components/OrderList";
 import { HelmetProvider } from "react-helmet-async";
+import Test from "./Components/Test";
 AOS.init();
 
 const router = createBrowserRouter([
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
         path: "/order",
         element: <OrderList></OrderList>,
       },
+      // {
+      //   path: "/test",
+      //   element: <Test></Test>
+      // },
     ],
   },
 ]);

@@ -106,6 +106,11 @@ const Nav = () => {
               <a><i class="fa-solid fa-dolly"></i>Order List</a>
             </li>
             </NavLink>
+            {/* <NavLink to="/test">
+            <li>
+              <a>Test</a>
+            </li>
+            </NavLink> */}
             
             
           </ul>

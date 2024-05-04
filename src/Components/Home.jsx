@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import Test from "./Test";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
@@ -7,36 +9,49 @@ const Home = () => {
         <title>Paracetamol | Home </title>
       </Helmet>
       <div className="mt-5">
-        <div
-          className="hero min-h-screen"
-          style={{
-            backgroundImage: "url(https://i.ibb.co/R3wqqTW/a.jpg)",
-          }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="">
-              <h1 className="mb-5 text-5xl font-bold" data-aos="zoom-in"
-data-aos-duration="1000">
-                Welcome To Paracetamol
-              </h1>
-              <p className="mb-5 text-yellow-500 font-bold">
-                (Under Development)
-              </p>
-              <p className="mb-5"data-aos="zoom-in"
-data-aos-duration="1500">
-                Welcome to Paracetamol, your comprehensive health service
-                platform. From prescription scanning and medication ordering to
-                delivery management, medical shop inventory, and doctor
-                appointments, we streamline your healthcare journey in one
-                convenient destination.
-              </p>
-              <button className="btn btn-warning btn-outline">
-                Explore Now
-              </button>
+        {/* Banner */}
+        {/* <div className="">
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage: "url(https://i.ibb.co/R3wqqTW/a.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
+              <div className="">
+                <h1
+                  className="mb-5 text-5xl font-bold"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  Welcome To Paracetamol
+                </h1>
+                <p className="mb-5 text-yellow-500 font-bold">
+                  (Under Development)
+                </p>
+                <p className="mb-5" data-aos="zoom-in" data-aos-duration="1500">
+                  Welcome to Paracetamol, your comprehensive health service
+                  platform. From prescription scanning and medication ordering
+                  to delivery management, medical shop inventory, and doctor
+                  appointments, we streamline your healthcare journey in one
+                  convenient destination.
+                </p>
+                <button className="btn btn-warning btn-outline">
+                  Explore Now
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
+{/* Banner Slider */}
+<div className="">
+  <Slider></Slider>
+</div>
+
+
       </div>
       <div className="">
         <div className="p-6 py-12 dark:bg-yellow-700 dark:text-gray-50">
