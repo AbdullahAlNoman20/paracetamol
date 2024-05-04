@@ -6,7 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Slider = () => {
   return (
     <div>
-      <div className=" p-3 flex justify-around items-center">
+      <div className=" p-3 flex justify-around items-center gap-5">
         <div className=" w-1/4 p-3">
           <div className="">
             <h1
