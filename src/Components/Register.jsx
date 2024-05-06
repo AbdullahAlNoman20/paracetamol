@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -6,18 +7,25 @@ const Register = () => {
       <Helmet>
         <title>Paracetamol | Register </title>
       </Helmet>
-      <div className="">
-        <div className="border flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
-          <div className="mb-8 text-center">
-            <h1 className="my-3 text-4xl font-bold">Register Now </h1>
-            <p className="text-sm dark:text-gray-600">
-              Register to access All Features
-            </p>
-          </div>
-          <form noValidate="" action="" className="space-y-12">
+      <div className=" p-2 flex flex-col lg:flex-row items-center justify-start gap-5">
+        <div className=" w-1/3 flex justify-center p-2">
+          <img
+            className="rounded-xl"
+            src="https://i.ibb.co/qr7Bghv/Register.gif"
+            alt=""
+          />
+        </div>
+
+        <div className=" p-2">
+          <div className="border w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800">
+            <h1 className="text-2xl font-bold text-center">Register Now </h1>
+            <form noValidate="" action="" className="space-y-12">
             <div className="space-y-4">
-              <div className="space-y-1 text-sm"data-aos-duration="2000"
-data-aos="fade-left">
+              <div
+                className="space-y-1 text-sm"
+                data-aos-duration="2000"
+                data-aos="fade-left"
+              >
                 <label htmlFor="name" className="block dark:text-gray-600">
                   Your Name
                 </label>
@@ -29,8 +37,7 @@ data-aos="fade-left">
                   className="border w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
                 />
               </div>
-              <div data-aos-duration="2000"
-data-aos="fade-right">
+              <div data-aos-duration="2000" data-aos="fade-right">
                 <label htmlFor="email" className="block mb-2 text-sm">
                   Email address
                 </label>
@@ -42,8 +49,7 @@ data-aos="fade-right">
                   className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800"
                 />
               </div>
-              <div data-aos-duration="2000"
-data-aos="fade-left">
+              <div data-aos-duration="2000" data-aos="fade-left">
                 <div className="flex justify-between mb-2">
                   <label htmlFor="password" className="text-sm">
                     Password
@@ -57,7 +63,6 @@ data-aos="fade-left">
                   className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800"
                 />
               </div>
-              
             </div>
             <div className="space-y-2">
               <div>
@@ -68,19 +73,22 @@ data-aos="fade-left">
                   Register
                 </button>
               </div>
-              <p className="px-6 text-sm text-center dark:text-gray-600">
-                Already have an account ?
+            </div>
+          </form>
+            
+            <p className="text-xs text-center sm:px-6 dark:text-gray-600">
+              Already have an account?
+              <NavLink to="/login">
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="hover:underline dark:text-violet-600"
+                  className="underline dark:text-green-700 ml-2 font-bold"
                 >
-                   Log In
+                  Log-In
                 </a>
-                .
-              </p>
-            </div>
-          </form>
+              </NavLink>
+            </p>
+          </div>
         </div>
       </div>
     </div>

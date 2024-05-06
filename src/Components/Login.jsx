@@ -7,7 +7,7 @@ const Login = () => {
       <Helmet>
         <title>Paracetamol | Log-In </title>
       </Helmet>
-      <div className=" p-2 flex items-center justify-start gap-5">
+      <div className=" p-2 flex flex-col lg:flex-row items-center justify-start gap-5">
         <div className=" w-1/3 flex justify-center p-2">
           <img
             className="rounded-xl"
